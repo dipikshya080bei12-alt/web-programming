@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Introduction Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(120deg,#eef2f7,#dbeafe);
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#1e293b;
+}
+
+.bio{
+    text-align:center;
+    margin-bottom:40px;
+    color:#334155;
+    font-size:18px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* hidden text */
+.card p{
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+    transition:0.4s ease;
+    color:#334155;
+    line-height:1.6;
+}
+
+/* show text on hover */
+.card:hover p{
+    opacity:1;
+    max-height:300px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Dipikshya</h1>
+<p class="bio">
+Hello! I’m an engineering student from Hetauda, Nepal. I enjoy learning new technologies, problem-solving, and exploring creative hobbies like singing and dancing.
+</p>
+
+<div class="container">
+
+    <div class="card">
+        <h2> About Me</h2>
+        <p>
+Hello! I am passionate about technology, learning, and improving my skills. I enjoy singing and exploring creative projects alongside my studies.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> Education</h2>
+        <p>
+Currently pursuing engineering (2023 batch). I am working on building my skills in programming, MATLAB, and basic machine learning.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> Skills</h2>
+        <p>
+Basic HTML, CSS, MATLAB, basic machine learning, problem-solving, teamwork, and teaching.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> Hobbies</h2>
+        <p>
+Singing, teaching my younger cousins,dancing, listening to music, and exploring new creative activities that help me grow personally.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2> Goals</h2>
+        <p>
+My goal is to become a skilled engineer and contribute positively through technology while continuing personal growth in creative fields.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
